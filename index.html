@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Case Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+    .container {
+      width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .summary {
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Test Case Generator</h2>
+
+  <div class="section">
+    <label>Upload SRS File</label><br>
+    <input type="file" accept=".pdf,.doc,.docx">
+  </div>
+
+  <div class="section">
+    <label>Upload Template File</label><br>
+    <input type="file" accept=".xls,.xlsx,.doc,.docx">
+  </div>
+
+  <div class="section">
+    <button disabled>Generate & Download Test Cases</button>
+  </div>
+
+  <div class="section summary">
+    <h3>SRS Summary</h3>
+    <p>
+      The uploaded SRS describes a system that allows users to manage accounts,
+      perform secure login, and generate reports based on user roles.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
