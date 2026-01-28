@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRS Test Case Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SRS Test Case Generator</h1>
+        <p>Upload your SRS (.docx) and Template (.xlsx) to generate test cases.</p>
+
+        <form id="uploadForm">
+            <label>SRS Document (.docx):</label><br>
+            <input type="file" name="srs_file" accept=".docx" required><br><br>
+
+            <label>Excel Template (.xlsx):</label><br>
+            <input type="file" name="template_file" accept=".xlsx" required><br><br>
+
+            <button type="submit">Generate Test Cases</button>
+        </form>
+
+        <h2>Summary</h2>
+        <pre id="srsSummary">Summary will appear here after generation...</pre>
+        <a id="downloadLink" style="display:none" download>Download Generated Excel</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
